@@ -1,0 +1,209 @@
+{
+  "updated": "2026-11-05T13:57:01Z",
+  "sensors": [
+    {
+      "id": "1",
+      "name": "Reception",
+      "model": "H5179",
+      "temperature": 24.4,
+      "humidity": 39.0,
+      "history": [
+        24.4
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "2",
+      "name": "First Floor East",
+      "model": "H5179",
+      "temperature": 23.4,
+      "humidity": 39.6,
+      "history": [
+        23.4
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "3",
+      "name": "First Floor West",
+      "model": "H5179",
+      "temperature": null,
+      "humidity": null,
+      "history": [],
+      "updated": null
+    },
+    {
+      "id": "4",
+      "name": "Second Floor",
+      "model": "H5179",
+      "temperature": 22.0,
+      "humidity": 38.1,
+      "history": [
+        22.0
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "5",
+      "name": "Meeting Room 1",
+      "model": "H5179",
+      "temperature": 23.8,
+      "humidity": 38.9,
+      "history": [
+        23.8
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "6",
+      "name": "Meeting Room 2",
+      "model": "H5179",
+      "temperature": 23.8,
+      "humidity": 34.5,
+      "history": [
+        23.8
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "7",
+      "name": "Office Area",
+      "model": "H5179",
+      "temperature": 23.9,
+      "humidity": 33.9,
+      "history": [
+        23.9
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "8",
+      "name": "Kitchen",
+      "model": "H5179",
+      "temperature": 22.9,
+      "humidity": 35.9,
+      "history": [
+        22.9
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "9",
+      "name": "Server Room",
+      "model": "H5179",
+      "temperature": null,
+      "humidity": null,
+      "history": [],
+      "updated": null
+    },
+    {
+      "id": "10",
+      "name": "Corridor",
+      "model": "H5179",
+      "temperature": 24.8,
+      "humidity": 31.8,
+      "history": [
+        24.8
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "11",
+      "name": "Sensor 11",
+      "model": "H5179",
+      "temperature": 22.9,
+      "humidity": 37.4,
+      "history": [
+        22.9
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "12",
+      "name": "Sensor 12",
+      "model": "H5179",
+      "temperature": null,
+      "humidity": null,
+      "history": [],
+      "updated": null
+    },
+    {
+      "id": "13",
+      "name": "Sensor 13",
+      "model": "H5179",
+      "temperature": 23.1,
+      "humidity": 40.1,
+      "history": [
+        23.1
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "14",
+      "name": "Sensor 14",
+      "model": "H5179",
+      "temperature": null,
+      "humidity": null,
+      "history": [],
+      "updated": null
+    },
+    {
+      "id": "15",
+      "name": "Sensor 15",
+      "model": "H5179",
+      "temperature": 20.5,
+      "humidity": 43.5,
+      "history": [
+        20.5
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "16",
+      "name": "Sensor 16",
+      "model": "H5179",
+      "temperature": 21.4,
+      "humidity": 41.0,
+      "history": [
+        21.4
+      ],
+      "updated": "2026-11-05T13:57:01Z"
+    },
+    {
+      "id": "17",
+      "name": "H5108 Sensor 1",
+      "model": "H5108",
+      "temperature": null,
+      "humidity": null,
+      "history": [],
+      "updated": null
+    },
+    {
+      "id": "18",
+      "name": "H5108 Sensor 2",
+      "model": "H5108",
+      "temperature": null,
+      "humidity": null,
+      "history": [],
+      "updated": null
+    },
+    {
+      "id": "19",
+      "name": "H5108 Sensor 3",
+      "model": "H5108",
+      "temperature": null,
+      "humidity": null,
+      "history": [],
+      "updated": null
+    },
+    {
+      "id": "20",
+      "name": "H5108 Sensor 4",
+      "model": "H5108",
+      "temperature": null,
+      "humidity": null,
+      "history": [],
+      "updated": null
+    }
+  ]
+}
