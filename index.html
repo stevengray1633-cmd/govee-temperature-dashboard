@@ -21,22 +21,22 @@ small{display:block;color:#8493aa;margin-top:9px}footer{margin-top:20px;color:#a
 @media(max-width:720px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:420px){body{padding:10px}.grid{gap:8px}.card{padding:10px}.summary{gap:7px}.summary>div{padding:10px}}
 </style></head><body>
-<header><div><h1><span>DELUXE</span> · Environment Monitor</h1><p>Temperature & humidity | 20 sensor positions</p></div><div class="badge" id="connection">Demo mode · No live connection</div></header>
+<header><div><h1><span>DELUXE</span> · Environment Monitor</h1><p>Temperature & humidity | 20 sensor positions</p></div><div class="badge" id="connection">Awaiting live sensor data</div></header>
 <section class="summary"><div>Reporting sensors<strong id="active">0 / 20</strong></div><div>Average temperature<strong id="average">—</strong></div><div>High temperature alerts<strong id="alerts">0</strong></div></section>
 <h2 class="section-heading">H5179 Sensors <span>16 positions</span></h2>
 <main class="grid" id="grid-h5179"></main>
 <h2 class="section-heading">H5108 Sensors <span>4 positions</span></h2>
 <section class="grid" id="grid-h5108"></section>
-<footer><span id="updated">Awaiting live data</span> · Thresholds: warm ≥ 24°C, high ≥ 27°C (editable). Demo values are illustrative, not real readings.</footer>
+<footer><span id="updated">Awaiting live data</span> · Thresholds: warm ≥ 24°C, high ≥ 27°C (editable). Values update when GitHub Actions publishes new data.</footer>
 <script>
 "use strict";
 // Keep API keys out of this file. Point this at a public, non-sensitive JSON data file when the GitHub Actions integration is ready.
 // The endpoint should return: {"sensors":[{"id":"1","name":"Reception","temperature":21.4,"humidity":45,"history":[20.8,21.1,21.4],"updated":"2026-11-04T17:00:00Z"}]}
-const DATA_ENDPOINT = "";
+const DATA_ENDPOINT = "./sensor-data.json";
 const REFRESH_MS = 5 * 60 * 1000;
 const NAMES = ["Reception","First Floor East","First Floor West","Second Floor","Meeting Room 1","Meeting Room 2","Office Area","Kitchen","Server Room","Corridor","Sensor 11","Sensor 12","Sensor 13","Sensor 14","Sensor 15","Sensor 16"];
 const ALL_NAMES = [...NAMES,"H5108 Sensor 1","H5108 Sensor 2","H5108 Sensor 3","H5108 Sensor 4"];
-const demo = ALL_NAMES.map((name,i)=>({id:String(i+1),name,temperature:i<8?+(20.5+i*.55).toFixed(1):null,humidity:i<8?43+i:null,history:i<8?[20.1+i*.4,20.4+i*.4,20.2+i*.5,20.5+i*.55]:[]}));
+
 function safe(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function spark(values){const nums=values.map(Number).filter(Number.isFinite);if(nums.length<2)return '<svg aria-label="No history available"></svg>';
 const min=Math.min(...nums)-.5,max=Math.max(...nums)+.5;const points=nums.map((n,i)=>`${(i/(nums.length-1)*100).toFixed(1)},${(65-(n-min)/(max-min)*54).toFixed(1)}`).join(" ");
@@ -55,12 +55,12 @@ document.getElementById("grid-h5108").innerHTML=cards.slice(16,20).join("");
 document.getElementById("active").textContent=`${active} / 20`;
 document.getElementById("average").textContent=active?(total/active).toFixed(1)+"°C":"—";
 document.getElementById("alerts").textContent=alerts;
-document.getElementById("connection").textContent=live?"Connected to data endpoint":"Demo mode · No live connection";
-document.getElementById("updated").textContent=live?"Last refreshed: "+new Date().toLocaleString("en-GB"):"Sample data only";
+document.getElementById("connection").textContent=live?"Connected to data endpoint":"Awaiting live sensor data";
+document.getElementById("updated").textContent=live?"Page checked: "+new Date().toLocaleString("en-GB"):"Awaiting first successful sensor update";
 }
-async function refresh(){if(!DATA_ENDPOINT){render(demo,false);return}
+async function refresh(){if(!DATA_ENDPOINT){render([],false);return}
 try{const r=await fetch(DATA_ENDPOINT,{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);
 const json=await r.json();if(!Array.isArray(json.sensors))throw Error("Invalid response");
-render(json.sensors,true)}catch(err){document.getElementById("connection").textContent="Connection error · "+err.message;}}
+render(json.sensors,true)}catch(err){render([],false);document.getElementById("connection").textContent="Waiting for live data · "+err.message;}}
 refresh();setInterval(refresh,REFRESH_MS);
 </script></body></html>
