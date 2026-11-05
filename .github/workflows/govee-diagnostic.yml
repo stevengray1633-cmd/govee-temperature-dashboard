@@ -1,0 +1,15 @@
+
+name: Diagnose Govee sensors
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check sensor readings
+        env:
+          GOVEE_API_KEY: ${{ secrets.GOVEE_API_KEY }}
+        run: python3 update_govee_diagnostic.py
