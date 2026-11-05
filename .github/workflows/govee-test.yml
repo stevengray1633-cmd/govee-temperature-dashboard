@@ -62,7 +62,7 @@ jobs:
           print("Response fields:", list(result.keys()))
           print("Data type:", type(result.get("data")).__name__)
           if isinstance(result.get("data"), dict):
-          print("Data fields:", list(result["data"].keys()))
+              print("Data fields:", list(result["data"].keys()))
           data = result.get("data", {})
           capabilities = data.get("capabilities", [])
 
