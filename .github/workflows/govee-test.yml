@@ -58,12 +58,12 @@ jobs:
 
           print("Sensor model:", sensor["sku"])
           print("API response code:", result.get("code"))
-          print("API message:", result.get("message"))
+          print("API message:", result.get("msg"))
           print("Response fields:", list(result.keys()))
-          print("Data type:", type(result.get("data")).__name__)
-          if isinstance(result.get("data"), dict):
-              print("Data fields:", list(result["data"].keys()))
-          data = result.get("data", {})
+          print("Payload type:", type(result.get("payload")).__name__)
+          if isinstance(result.get("payload"), dict):
+              print("Payload fields:", list(result["payload"].keys()))
+          data = result.get("payload") or {}
           capabilities = data.get("capabilities", [])
 
           for cap in capabilities:
