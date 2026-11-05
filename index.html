@@ -32,7 +32,7 @@ small{display:block;color:#8493aa;margin-top:9px}footer{margin-top:20px;color:#a
 "use strict";
 // Keep API keys out of this file. Point this at a public, non-sensitive JSON data file when the GitHub Actions integration is ready.
 // The endpoint should return: {"sensors":[{"id":"1","name":"Reception","temperature":21.4,"humidity":45,"history":[20.8,21.1,21.4],"updated":"2026-11-04T17:00:00Z"}]}
-const DATA_ENDPOINT = "./sensor-data.json";
+const DATA_ENDPOINT = "sensor-data.json";
 const REFRESH_MS = 5 * 60 * 1000;
 const NAMES = ["Reception","First Floor East","First Floor West","Second Floor","Meeting Room 1","Meeting Room 2","Office Area","Kitchen","Server Room","Corridor","Sensor 11","Sensor 12","Sensor 13","Sensor 14","Sensor 15","Sensor 16"];
 const ALL_NAMES = [...NAMES,"H5108 Sensor 1","H5108 Sensor 2","H5108 Sensor 3","H5108 Sensor 4"];
