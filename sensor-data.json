@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T17:16:16Z",
+  "updated": "2026-11-06T18:09:32Z",
   "sensors": [
     {
       "id": "1",
@@ -38,16 +38,17 @@
         22.2,
         22.4,
         22.9,
+        22.7,
         22.7
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "2",
       "name": "Theo 1st Flr CCS Desks",
       "model": "H5179",
       "temperature": 23.3,
-      "humidity": 40.4,
+      "humidity": 40.3,
       "history": [
         23.4,
         23.4,
@@ -79,9 +80,10 @@
         23.4,
         23.6,
         23.5,
+        23.3,
         23.3
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "3",
@@ -96,7 +98,7 @@
       "id": "4",
       "name": "Theo 1st Flr SER Comms",
       "model": "H5179",
-      "temperature": 22.0,
+      "temperature": 22.1,
       "humidity": 42.2,
       "history": [
         22.0,
@@ -129,15 +131,16 @@
         22.3,
         22.2,
         22.1,
-        22.0
+        22.0,
+        22.1
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "5",
       "name": "Theobalds Mastering",
       "model": "H5179",
-      "temperature": 23.5,
+      "temperature": 23.4,
       "humidity": 41.0,
       "history": [
         23.8,
@@ -170,16 +173,17 @@
         23.5,
         23.5,
         23.5,
-        23.5
+        23.5,
+        23.4
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "6",
       "name": "Theo DFX Room Grd",
       "model": "H5179",
-      "temperature": 23.7,
-      "humidity": 38.8,
+      "temperature": 23.8,
+      "humidity": 38.9,
       "history": [
         23.8,
         23.7,
@@ -211,16 +215,17 @@
         23.7,
         23.5,
         23.7,
-        23.7
+        23.7,
+        23.8
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "7",
       "name": "Theo Grd Theatre 2",
       "model": "H5179",
-      "temperature": 23.8,
-      "humidity": 37.8,
+      "temperature": 24.1,
+      "humidity": 38.2,
       "history": [
         23.9,
         23.9,
@@ -252,16 +257,17 @@
         24.1,
         24.5,
         24.5,
-        23.8
+        23.8,
+        24.1
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "8",
       "name": "Theo Grd Project T1 En",
       "model": "H5179",
-      "temperature": 23.1,
-      "humidity": 37.5,
+      "temperature": 23.4,
+      "humidity": 36.9,
       "history": [
         22.9,
         23.4,
@@ -293,9 +299,10 @@
         23.2,
         23.3,
         23.4,
-        23.1
+        23.1,
+        23.4
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "9",
@@ -310,8 +317,8 @@
       "id": "10",
       "name": "Theo Grd Project T2 En",
       "model": "H5179",
-      "temperature": 24.7,
-      "humidity": 35.2,
+      "temperature": 25.5,
+      "humidity": 34.1,
       "history": [
         24.8,
         24.2,
@@ -343,16 +350,17 @@
         24.9,
         24.0,
         24.3,
-        24.7
+        24.7,
+        25.5
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "11",
       "name": "Theo Grd MER Main Comm",
       "model": "H5179",
       "temperature": 22.6,
-      "humidity": 39.1,
+      "humidity": 39.5,
       "history": [
         22.9,
         22.6,
@@ -384,9 +392,10 @@
         22.8,
         22.6,
         22.6,
+        22.6,
         22.6
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "12",
@@ -402,7 +411,7 @@
       "name": "Theo 1st Flr Hot Desks",
       "model": "H5179",
       "temperature": 23.1,
-      "humidity": 40.9,
+      "humidity": 41.0,
       "history": [
         23.1,
         23.1,
@@ -434,9 +443,10 @@
         23.1,
         23.1,
         23.1,
+        23.1,
         23.1
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "14",
@@ -452,7 +462,7 @@
       "name": "Theo Theatre 1",
       "model": "H5179",
       "temperature": 20.1,
-      "humidity": 46.4,
+      "humidity": 46.3,
       "history": [
         20.5,
         20.5,
@@ -484,15 +494,16 @@
         20.3,
         20.1,
         20.0,
+        20.1,
         20.1
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "16",
       "name": "Theobalds MFR 1",
       "model": "H5179",
-      "temperature": 20.6,
+      "temperature": 20.4,
       "humidity": 45.6,
       "history": [
         21.4,
@@ -525,15 +536,16 @@
         20.4,
         20.4,
         20.4,
-        20.6
+        20.6,
+        20.4
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "17",
       "name": "Theo SER 1st Flr Temp",
       "model": "H5108",
-      "temperature": 20.0,
+      "temperature": 21.2,
       "humidity": null,
       "history": [
         21.3,
@@ -563,9 +575,10 @@
         20.4,
         21.5,
         21.1,
-        20.0
+        20.0,
+        21.2
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "18",
@@ -601,15 +614,16 @@
         25.8,
         25.7,
         25.7,
+        25.7,
         25.7
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "19",
       "name": "Theo MER Grd Temp Sen",
       "model": "H5108",
-      "temperature": 20.6,
+      "temperature": 21.0,
       "humidity": null,
       "history": [
         21.2,
@@ -639,9 +653,10 @@
         21.3,
         20.9,
         21.0,
-        20.6
+        20.6,
+        21.0
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     },
     {
       "id": "20",
@@ -677,9 +692,10 @@
         22.5,
         22.2,
         22.5,
+        22.5,
         22.5
       ],
-      "updated": "2026-11-06T17:16:16Z"
+      "updated": "2026-11-06T18:09:32Z"
     }
   ]
 }
